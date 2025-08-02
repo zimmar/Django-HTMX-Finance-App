@@ -27,4 +27,4 @@ class Transaction(models.Model):
     date = models.DateField()
 
     def __str__(self):
-        return f"{self.date} - {self.description} - {self.amount}"
+        return f"{self.date} - {self.type} - {self.category} - {self.ammount}"
